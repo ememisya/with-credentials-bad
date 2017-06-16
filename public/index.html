@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>node-cors-client</title>
+  </head>
+  <body>
+    <script src="badcode.js"></script>
+    <section>
+      <h1>Get a cookie from good server and come back.</h1>
+      <form action="http://localhost:3000/cookie">
+        <input type="submit" name="button" value="GET COOKIES"/>
+      </form>
+    </section>
+
+    <section>
+      <h1>Dont give me cookies</h1>
+      <article data-url="/nocookie" data-method="DELETE"></article>
+    </section>
+
+   <section>
+      <h1>Do give me cookies</h1>
+      <article data-url="/wantcookie" data-credentials="true" data-method="DELETE"></article>
+    </section>
+
+    <section>
+      <h1>Do give me cookies too</h1>
+      <article data-url="http://localhost:3002/wantcookie" data-external="true" data-credentials="true" data-method="DELETE"></article>
+    </section>
+
+
+    <script id='template' type='text/template'>
+      <h2></h2>
+      <pre></pre>
+      <div><textarea></textarea><p class='error'></p></div>
+      <div><button>Fetch</button></div>
+    </script>
+    <script src="/jquery-2.0.0.min.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "with-credentials-bad",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "bin/start.sh",
+    "stop" : "bin/stop.sh"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "cors": "*",
+    "express": "*"
+  }
+}
